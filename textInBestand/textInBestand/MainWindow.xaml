@@ -1,0 +1,31 @@
+﻿<Window x:Class="textInBestand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:textInBestand"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Bestand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+
+        <TextBox Name="txtFilePath" HorizontalAlignment="Left" VerticalAlignment="Top" Width="450" Height="25" Margin="10,30,0,0"/>
+
+
+
+        <Label Content="String" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,65,0,0"/>
+
+        <TextBox Name="txtSearchString" HorizontalAlignment="Left" VerticalAlignment="Top" Width="560" Height="25" Margin="10,85,0,0"/>
+
+
+
+        <TextBox Name="txtResults" HorizontalAlignment="Left" VerticalAlignment="Top" Width="560" Height="150" Margin="10,120,0,0" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True"/>
+
+
+
+        <Button Content="Bladeren" Name="btnFind" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="30" Margin="0,0,120,10" Click="btnFind_Click"/>
+
+        <Button Content="Zoeken" Name="btnSearch" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="30" Margin="0,0,10,10" Click="btnSearch_Click"/>
+
+    </Grid>
+</Window>
